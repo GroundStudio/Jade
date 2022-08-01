@@ -1,5 +1,5 @@
 name=GroundStudio Jade Boards
-version=1.0.1
+version=1.0.2
 
 # AVR compile variables
 # ---------------------
