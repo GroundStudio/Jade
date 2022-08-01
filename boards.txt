@@ -26,4 +26,41 @@ jade-nanoplus.build.f_cpu=16000000L
 
 
 
+################################################################################
+############################# Jade Pro Micro ###################################
+################################################################################
+jade-promicro.name=Jade Pro Micro 5V 16Mhz
 
+jade-promicro.upload.tool=avrdude
+jade-promicro.upload.protocol=avr109
+jade-promicro.upload.maximum_size=28672
+jade-promicro.upload.maximum_data_size=2560
+jade-promicro.upload.speed=57600
+jade-promicro.upload.disable_flushing=true
+jade-promicro.upload.use_1200bps_touch=true
+jade-promicro.upload.wait_for_upload_port=true
+
+jade-promicro.bootloader.tool=avrdude
+jade-promicro.bootloader.unlock_bits=0x3F
+jade-promicro.bootloader.lock_bits=0x2F
+jade-promicro.bootloader.low_fuses=0xFF
+jade-promicro.bootloader.high_fuses=0xD8
+
+jade-promicro.build.board=AVR_jade-promicro
+jade-promicro.build.core=arduino:arduino
+jade-promicro.build.variant=jade-promicro
+jade-promicro.build.mcu=atmega32u4
+jade-promicro.build.usb_product="Jade Pro Micro"
+jade-promicro.build.vid=0x1b4f
+jade-promicro.build.extra_flags={build.usb_flags}
+
+
+############################# Pro Micro 5V / 16MHz #############################
+
+jade-promicro.build.pid.0=0x9205
+jade-promicro.build.pid.1=0x9206
+jade-promicro.build.pid=0x9206
+jade-promicro.build.f_cpu=16000000L
+
+jade-promicro.bootloader.extended_fuses=0xCB
+jade-promicro.bootloader.file=caterina/Caterina-jade-promicro16.hex

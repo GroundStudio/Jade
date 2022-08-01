@@ -1,3 +1,11 @@
 name=GroundStudio Jade Boards
-version=1.0.0
+version=1.0.1
+
+
+
+# USB Default Flags
+# Default blank usb manufacturer will be filled in at compile time
+# - from numeric vendor ID, set to Unknown otherwise
+build.usb_manufacturer="Unknown"
+build.usb_flags=-DUSB_VID={build.vid} -DUSB_PID={build.pid} '-DUSB_MANUFACTURER={build.usb_manufacturer}' '-DUSB_PRODUCT={build.usb_product}'
 
