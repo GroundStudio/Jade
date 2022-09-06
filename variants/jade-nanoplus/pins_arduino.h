@@ -34,10 +34,6 @@
 
 #define digitalPinHasPWM(p)         ((p) == 0 || (p) == 1 || (p) == 2 || (p) == 3 || (p) == 5 || (p) == 6 || (p) == 9 || (p) == 10 || (p) == 11)
 
-#define PIN_SPI_SS    (10)
-#define PIN_SPI_MOSI  (11)
-#define PIN_SPI_MISO  (12)
-#define PIN_SPI_SCK   (13)
 
 #define PIN_SPI_SS0   (10)
 #define PIN_SPI_MOSI0 (11)
@@ -64,8 +60,6 @@ static const uint8_t MOSI1 = PIN_SPI_MOSI1;
 static const uint8_t MISO1 = PIN_SPI_MISO1;
 static const uint8_t SCK1 = PIN_SPI_SCK1;
 
-#define PIN_WIRE_SDA (18)
-#define PIN_WIRE_SCL (19)
 
 #define PIN_WIRE_SDA0 (18)
 #define PIN_WIRE_SCL0 (19)
