@@ -17,6 +17,8 @@ jade-nanoplus.build.board=AVR_JADE_NANOPLUS
 jade-nanoplus.build.core=arduino:arduino
 jade-nanoplus.build.variant=jade-nanoplus
 
+jade-nanoplus.build.extra_flags={build.i2c_flags} {build.spi_flags}
+
 jade-nanoplus.build.i2c_flags=-DTWBR=TWBR0 -DTWSR=TWSR0 -DTWAR=TWAR0 -DTWDR=TWDR0 -DTWCR=TWCR0 -DTWAMR=TWAMR0 -DTWI_vect=TWI0_vect -DPIN_WIRE_SDA=PIN_WIRE_SDA0 -DPIN_WIRE_SCL=PIN_WIRE_SCL0
 
 menu.spi=Default SPI bus
