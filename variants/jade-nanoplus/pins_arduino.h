@@ -45,10 +45,10 @@
 #define PIN_SPI_MISO1 (14)
 #define PIN_SPI_SCK1  (15)
 
-static const uint8_t SS   = PIN_SPI_SS;
-static const uint8_t MOSI = PIN_SPI_MOSI;
-static const uint8_t MISO = PIN_SPI_MISO;
-static const uint8_t SCK  = PIN_SPI_SCK;
+static const uint8_t SS   = PIN_SPI_SS0;
+static const uint8_t MOSI = PIN_SPI_MOSI0;
+static const uint8_t MISO = PIN_SPI_MISO0;
+static const uint8_t SCK  = PIN_SPI_SCK0;
 
 static const uint8_t SS0 = PIN_SPI_SS0;
 static const uint8_t MOSI0 = PIN_SPI_MOSI0;
@@ -67,8 +67,8 @@ static const uint8_t SCK1 = PIN_SPI_SCK1;
 #define PIN_WIRE_SDA1 (22)
 #define PIN_WIRE_SCL1 (23)
 
-static const uint8_t SDA = PIN_WIRE_SDA;
-static const uint8_t SCL = PIN_WIRE_SCL;
+static const uint8_t SDA = PIN_WIRE_SDA0;
+static const uint8_t SCL = PIN_WIRE_SCL0;
 
 static const uint8_t SDA0 = PIN_WIRE_SDA0;
 static const uint8_t SCL0 = PIN_WIRE_SCL0;
