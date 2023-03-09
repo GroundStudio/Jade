@@ -36,6 +36,46 @@ jade-nanoplus.bootloader.extended_fuses=0xF4
 jade-nanoplus.bootloader.file=optiboot/optiboot_atmega328pb_16mhz.hex
 jade-nanoplus.build.f_cpu=16000000L
 
+################################################################################
+############################# Jade Uno+ ########################################
+################################################################################
+
+jade-unoplus.name=GroundStudio Jade Uno+
+jade-unoplus.upload.tool=arduino:avrdude
+jade-unoplus.upload.protocol=arduino
+jade-unoplus.upload.maximum_size=32256
+jade-unoplus.upload.maximum_data_size=2048
+
+jade-unoplus.bootloader.tool=arduino:avrdude
+jade-unoplus.bootloader.low_fuses=0xFF
+jade-unoplus.bootloader.high_fuses=0xDE
+jade-unoplus.bootloader.unlock_bits=0xFF
+jade-unoplus.bootloader.lock_bits=0xCF
+
+jade-unoplus.build.mcu=atmega328pb
+jade-unoplus.build.board=AVR_JADE_UNOPLUS
+jade-unoplus.build.core=arduino:arduino
+jade-unoplus.build.variant=jade-unoplus
+
+jade-unoplus.build.extra_flags={build.i2c_flags} {build.spi_flags}
+
+jade-unoplus.build.i2c_flags=-DTWBR=TWBR0 -DTWSR=TWSR0 -DTWAR=TWAR0 -DTWDR=TWDR0 -DTWCR=TWCR0 -DTWAMR=TWAMR0 -DTWI_vect=TWI0_vect -DPIN_WIRE_SDA=PIN_WIRE_SDA0 -DPIN_WIRE_SCL=PIN_WIRE_SCL0
+
+menu.spi=Default SPI bus
+jade-unoplus.menu.spi.spi0=SPI0
+jade-unoplus.menu.spi.spi0.build.spi_flags=-DSPCR=SPCR0 -DSPSR=SPSR0 -DSPDR=SPDR0 -DPIN_SPI_SS=PIN_SPI_SS0 -DPIN_SPI_MOSI=PIN_SPI_MOSI0 -DPIN_SPI_MISO=PIN_SPI_MISO0 -DPIN_SPI_SCK=PIN_SPI_SCK0
+jade-unoplus.menu.spi.spi1=SPI1
+jade-unoplus.menu.spi.spi1.build.spi_flags=-DSPCR=SPCR1 -DSPSR=SPSR1 -DSPDR=SPDR1 -DPIN_SPI_SS=PIN_SPI_SS1 -DPIN_SPI_MOSI=PIN_SPI_MOSI1 -DPIN_SPI_MISO=PIN_SPI_MISO1 -DPIN_SPI_SCK=PIN_SPI_SCK1
+
+
+
+##############################################################
+
+jade-unoplus.upload.speed=115200
+jade-unoplus.bootloader.extended_fuses=0xF4
+jade-unoplus.bootloader.file=optiboot/optiboot_atmega328pb_16mhz.hex
+jade-unoplus.build.f_cpu=16000000L
+
 
 
 ################################################################################
